@@ -26,6 +26,7 @@ var News = React.createClass({
         return (
             <div className="news">
                 {newsTemplate}
+                <strong>{newsTemplate.length == 0 ? "Новостей нет" : "Всего новостей: " + newsTemplate.length}</strong>
             </div>
         );
     }
